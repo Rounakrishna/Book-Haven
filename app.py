@@ -240,5 +240,24 @@ def logout():
 
     # Redirect user to login form
     return redirect("/")
+
+
+@app.route("/about")
+def about():
+    
+    return render_template("about.html")
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True,port=8000,host='0.0.0.0')
