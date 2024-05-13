@@ -21,11 +21,19 @@
 
         <div>
             <ul id="navbar">
+                <!-- Search box -->
+                <li>
+                  <form action="/search" method="GET" class="search-form">
+                      <input type="text" name="q" placeholder="Search..." class="search-input">
+                      <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
                 {% if session["user_id"] %}
                 <li><a class="active" href="/">Home</a></li>
                 <li><a href="/#product1">Shop</a></li>
                 <li><a href="/logout">Log out</a></li>
                 <li><a href="/profile">Profile</a></li>
+                <li><a href="/about">About Us</a></li>
                 <li><a href="#footer">Contact</a></li>
                 <li><a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 {% else %}
@@ -43,39 +51,39 @@
 
     <footer id="footer" class="section-p1">
         <div class="row">
-          <div class="col">
-            <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" alt="">
-          </div>
-          <div class="col">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong> Maharastra,India</p>
-            <p><strong>Phone:</strong> 9584152599</p>
-            <p><strong>Email:</strong> Suraj@gmail.com</p>
-          </div>
-          <div class="col">
-            <div class="follow">
-              <h4>Follow us</h4>
-              <div class="icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-painterest-p"></i>
-                <i class="fab fa-youtube"></i>
-              </div>
+            <div class="col">
+                <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" alt="">
             </div>
-          </div>
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Maharastra,India</p>
+                <p><strong>Phone:</strong> 9584152599</p>
+                <p><strong>Email:</strong> Suraj@gmail.com</p>
+            </div>
+            <div class="col">
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-painterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
-          <div class="col">
-            <hr>
-          </div>
+            <div class="col">
+                <hr>
+            </div>
         </div>
         <div class="row">
-          <div class="col">
-            <p>&#169 2023, youssef el yarchouhi - Ecommerce website</p>
-          </div>
+            <div class="col">
+                <p>&#169 2023, youssef el yarchouhi - Ecommerce website</p>
+            </div>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>

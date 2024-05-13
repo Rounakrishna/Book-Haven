@@ -637,3 +637,36 @@ footer.section-p1 {
   .button:hover{
     color: #fff;
   }
+
+  /* --------------------------------------? */
+
+  .search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border-radius: 20px;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #a57971;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: -40px; /* Adjust as needed */
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust the search icon size */
+.search-button i {
+    font-size: 18px;
+}
