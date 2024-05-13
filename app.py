@@ -249,7 +249,9 @@ def about():
 
 
 
-
+@app.route('/health')
+def health_check():
+    return 'OK', 200
 
 
 
